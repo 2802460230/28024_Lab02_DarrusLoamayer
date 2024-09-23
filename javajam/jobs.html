@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaJam House Jobs</title>
+</head>
+<body>
+
+    <header>
+        <h1>JavaJam Coffee House</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
+        <a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;
+        <a href="music.html">Music</a>&nbsp;&nbsp;&nbsp;
+        <a href="jobs.html">Jobs</a>
+    </nav>
+
+    <main>
+        <h2>Jobs at JavaJam</h2>
+
+        <p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk (*).</p>
+
+        <form method="post" action="http://webdevbasics.net/scripts/javajam8.php">
+            <label for="name">*</label>Name:
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">*</label>E-mail:
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="experience">*</label>Experience:
+            <textarea id="experience" name="experience" required></textarea><br>
+
+            <label for="position">*</label>Select Job Position:
+            <select id="position" name="position" required>
+                <option value="barista">Barista</option>
+                <option value="manager">Manager</option>
+                <option value="musician">Musician</option>
+            </select><br>
+
+            <label for="interview-date">*</label>Preferred Interview Date and Time:
+            <input type="datetime-local" id="interview-date" name="interview-date" required><br>
+
+            <label for="photo">*</label>Upload Your Photo:
+            <input type="file" id="photo" name="photo" required><br>
+
+            <button type="submit" name="submit">Apply Now</button>
+        </form>
+    </main>
+
+    <footer>
+ 
